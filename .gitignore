@@ -1,0 +1,10 @@
+/dataset
+/.venv
+/data
+/kaggle_3m
+/.idea
+__pycache__/
+*.pth
+*.pt
+*.nii
+*.lnk
