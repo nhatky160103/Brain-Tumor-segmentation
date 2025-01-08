@@ -109,6 +109,8 @@ You can read more about paper of segformer 3d in: [Segformer 3D paper](https://a
 - Animated visualizations of MRI slices.
 
 visualizing video:
+
+
 https://github.com/user-attachments/assets/6846c9e2-d56d-4769-95f7-26b7641ee817
 
 
