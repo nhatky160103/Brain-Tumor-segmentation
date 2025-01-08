@@ -1,6 +1,5 @@
 /dataset
 /.venv
-/data
 /kaggle_3m
 /.idea
 __pycache__/
@@ -8,3 +7,6 @@ __pycache__/
 *.pt
 *.nii
 *.lnk
+*.csv
+*.txt
+*.mp4
