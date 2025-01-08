@@ -685,9 +685,9 @@ def segformer3d_get_predict(segformer3D, case_name):
     image = input[0].numpy()
     label = None
     gt = None
-    if transformed_data['label']:
-        label = transformed_data['label'].unsqueeze(0).to(device)
-        gt = label[0].numpy()
+
+    label = transformed_data['label'].unsqueeze(0).to(device)
+    gt = label[0].numpy()
 
     segformer3D.eval()
     output = segformer3D(input)
@@ -700,8 +700,8 @@ def segformer3d_get_predict(segformer3D, case_name):
     convert_back = ConvertBackToOriginalClasses()
 
     pred_back = None
-    if gt:
-        label_back = convert_back(gt)  # Khôi phục nhãn gốc
+   
+    label_back = convert_back(gt)  # Khôi phục nhãn gốc
     pred_back = convert_back(pred)  # Khôi phục dự đoán gốc
 
     return image, gt, pred, label_back, pred_back
