@@ -122,6 +122,7 @@ class ConvertToMultiChannelBasedOnBratsClassesd_2020(MapTransform):
             d[key] = torch.stack(result, axis=0).float()
         return d
 
+
 class ConvertToMultiChannelBasedOnBratsClassesd_2017(MapTransform):
     """
     Convert labels to multi channels based on brats classes:
@@ -165,6 +166,7 @@ def get_dataloader2020(batch_size, data_path_dict):
                 pixdim=(1.0, 1.0, 1.0),
                 mode=("bilinear", "nearest"),
             ),
+            
             RandSpatialCropd(keys=["image", "label"], roi_size=[128, 128, 128], random_size=False),
             RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
             RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=1),

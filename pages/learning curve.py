@@ -76,7 +76,6 @@ def calculate_metrics(y_true, y_pred, label_mapping):
 
 
 
-
 def display_brat_properties():
     # Dữ liệu bảng mô tả các thông số của bệnh nhân trong bộ dữ liệu BRATS 2020
     data = {

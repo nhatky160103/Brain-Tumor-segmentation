@@ -100,7 +100,7 @@ if uploaded_file is not None:
     if 'plotter' not in st.session_state:
         plotter = render_plot()
 
-    tabs = st.tabs(["Tab 1", "Tab 2", "Tab 3"])
+    tabs = st.tabs(["Tab 1", "Tab 2"])
 
     with tabs[0]:
         # Hiển thị ảnh 3D trong Tab 1 chỉ khi cần thiết
